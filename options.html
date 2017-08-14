@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Send to 2Do Options</title>
+  <meta charset="utf-8" />
+</head>
+<body>
+	<h1>Task Options</h1>
+  <div style="width: 50em">
+    <div style="float: left; width: 50%">
+      <h2>Task: </h2> <input type="text" name="title_template" id="title_template" size="40"></input>
+        <br>
+      <h2>Note: </h2> <textarea type="text" name="note_template" id="note_template" cols="40" rows="3"></textarea>
+        <br>
+      <h2>List: </h2> <input type="text" name="list_template" id="list_template" size="40"></input>
+        <br>
+      <h2>Star: </h2> 
+      			<select name="starred_template" id="starred_template">
+  					<option value="0">No</option>
+  					<option value="1">Yes</option>
+				</select>        
+        <br>
+        <h2>Priority: </h2> 
+        		<select name="priority_template" id="priority_template">
+  					<option value="0">None</option>
+  					<option value="1">Low</option>
+  					<option value="2">Medium</option>
+  					<option value="3">High</option>
+				  </select> 
+        <br>
+        <h2>View task before saving? </h2> 
+        		<select name="view_template" id="view_template">
+  					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</select>        
+
+    </div>
+<br>
+
+    <div style="float: right; width: 50%">
+      <p>
+        %title% adds the tab title to the <i>task</i>. Write before or after to add to the <i>task</i>.
+        <br><br>
+        %selection% adds selected texto to the <i>note</i>. Write before or after to add to the <i>note</i>. you can add %url% if you want it in the note as well.
+        <br><br>
+        Name of an existing <i>list</i> in app, case-insensitive. Default <i>list</i> is selected if not specified. 
+        <br><br><br>
+        Adds star to task. 
+        <br><br>
+        Adds priority to task. 
+        <br><br>
+        Shows pre-filled in a Quick Entry window.
+      </p>
+    </div>
+  </div>
+
+</br></br>
+  <div style="clear: both">
+    </br></br>
+    <h2>What do you think?</h2>
+    <p>
+      <b>E-mail:</b> <a href="mailto:doctor.tlaloc@gmail.com?Subject=2Do%20Chrome%20Extension" target="_blank">doctor.tlaloc@gmail.com</a><br>
+      <b>Reddit</b> doctor_tlaloc<br>
+      <br>
+      <b>Leave a Review</b>
+    </p>
+  </div>
+  
+  <div>
+      <p>
+<input type="hidden" name="title_example" id="title_example" readonly size="40"></input>
+<input type="hidden" name="note_example" id="note_example" readonly size="40"></input>
+<input type="hidden" name="list_example" id="list_example" readonly size="40"></input>
+<input type="hidden" name="starred_example" id="starred_example" readonly size="40"></input>
+<input type="hidden" name="priority_example" id="priority_example" readonly size="40"></input>
+<input type="hidden" name="view_example" id="view_example" readonly size="40"></input>
+</p>
+</div>
+
+  <script type="text/javascript" src="options.js"></script>
+  <script type="text/javascript" src="options_editor.js"></script>
+</body>
+</html>
